@@ -1,4 +1,3 @@
-# run-pytorch.py
 from azureml.core import Workspace
 from azureml.core import Experiment
 from azureml.core import Environment
@@ -26,4 +25,3 @@ if __name__ == "__main__":
     run = experiment.submit(config)
     aml_url = run.get_portal_url()
     print(aml_url)
-    
